@@ -1,0 +1,26 @@
+body {
+    background-color: #000000;
+}
+
+#letranombre {
+    color: blanchedalmond;
+    font-family: "Holtwood One SC", serif;
+    font-size: 100px;
+    font-weight: 200;
+    font-style: normal;
+}
+
+#letratitulo {
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    font-style: normal;
+}
+
+#tarjetas {
+    background-color: #171717;
+    width: 20rem;
+    color:#ffffff
+}
+
