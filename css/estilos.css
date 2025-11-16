@@ -18,9 +18,45 @@ body {
     font-style: normal;
 }
 
+#letratarjetas {
+    font-size: 25px;
+    color: #ffffff;
+}
+
 #tarjetas {
     background-color: #171717;
     width: 20rem;
     color:#ffffff
 }
 
+#tarjetasdiscografia {
+    background-color: #171717;
+    
+}
+
+#cajas {
+    width: calc(100% - 6rem); 
+}
+
+#cajascolor {
+ width: calc(100% - 6rem); 
+ background-color: #171717;
+ margin: 0 auto;
+}
+
+#letracajas {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    
+}
+
+.card-dark {
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+}
+
+.card-dark .list-group-item {
+  background-color: #1a1a1a;
+  color: white;
+  border: none;

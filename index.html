@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Plaster&display=swap" rel="stylesheet">
 </head>
 <body class="m-0 p-0">
-    <nav class="navbar navbar-expand-sm bg-body-tertiar mx-3 mb-4 mt-3 rounded-4" style="background-color: #171717;" data-bs-theme="dark">
+
+<nav class="navbar navbar-expand-sm bg-body-tertiar mx-5 mb-4 mt-3 rounded-4" style="background-color: #171717;" data-bs-theme="dark">
   <div class="container-fluid mx-5">
     <a class="navbar-brand" href="#">
         <img src="imagenes/logo.png" alt="Bootstrap" width="50" height="50" class="rounded-circle">
@@ -23,10 +24,16 @@
       
         <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Historia</a>
+          <a class="nav-link" href="hector.html">Hector</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Discografía</a>
+          <a class="nav-link" href="willie.html">Willie</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="historiaduo.html">Historia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="discografia.html">Discografía</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Datos</a>
@@ -40,54 +47,75 @@
   </div>
 </nav>
 
-<div class="container-fluid text-center p-0 m-0">
-  <div class="row m-0 p-0" style="background-color: #171717;">
-    <div class="col-5 my-auto" id="letranombre">HECTOR</div>
-    <div class="col-7 m-0 p-0">
-      <img src="imagenes/hectorportada.jpg" width="900" class="img-fluid m-0 p-0" alt="">
+<div class="container-fluid text-center p-0 mx-5 mt-5 rounded-4 overflow-hidden" id="cajascolor">
+  <!-- Fila HECTOR -->
+  <div class="row m-0 p-0 align-items-center" >
+    <!-- En pantallas grandes: texto a la izquierda (col-md-5)
+         En pantallas chicas: texto arriba (order-1) -->
+    <div class="col-12 col-md-5 order-1 order-md-1 my-auto" id="letranombre">
+      HECTOR
+    </div>
+
+    <!-- Imagen: en pantallas grandes a la derecha (col-md-7)
+         En pantallas chicas: abajo (order-2) -->
+    <div class="col-12 col-md-7 order-2 order-md-2 m-0 p-0">
+      <img src="imagenes/hectorportada.jpg" class="img-fluid m-0 p-0 w-100 " alt="">
     </div>
   </div>
-  <div class="row m-0 p-0" style="background-color: #171717;">
-    <div class="col-7 m-0 p-0">
-      <img src="imagenes/willieportada.jpg" width="1100" class="img-fluid m-0 p-0" alt="">
+
+  <!-- Fila WILLIE -->
+  <div class="row m-0 p-0 align-items-center" style="background-color: #171717;">
+    <!-- Imagen: en pantallas grandes a la izquierda
+         En pantallas chicas: abajo (order-2) -->
+    <div class="col-12 col-md-7 order-2 order-md-1 m-0 p-0">
+      <img src="imagenes/willieportada.jpg" class="img-fluid m-0 p-0 w-100" alt="">
     </div>
-    <div class="col-5 my-auto" id="letranombre">WILLIE</div>
+
+    <!-- Texto: en pantallas grandes a la derecha
+         En pantallas chicas: arriba (order-1) -->
+    <div class="col-12 col-md-5 order-1 order-md-2 my-auto " id="letranombre">
+      WILLIE
+    </div>
   </div>
 </div>
 
 
-<div class="container-fluid mt-5 text-center">
+<div class="container-fluid mt-5 text-center p-0" id="cajas">
     <div class="row">
       <div class="col-12" id="letratitulo">Albumes Recomendados</div>
     </div>
 
-  <div class="row mt-1">
+  <div class="row mt-1 p-0 justify-content-between">
+
   <div class="col-3">
-    <div class="card p-3 m-auto" id="tarjetas"">
+    <div class="card p-3 rounded-4 m-auto" id="tarjetas">
           <img src="imagenes/elmalo.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <p class="card-text">"El Malo" <br> 1967</p>
           </div>
       </div>
     </div>
+
     <div class="col-3">
-    <div class="card p-3 m-auto"id="tarjetas">
+    <div class="card p-3 rounded-4 m-auto" id="tarjetas">
           <img src="imagenes/lavoz.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <p class="card-text">"La Voz" <br> 1975</p>
           </div>
       </div>
     </div>
+
     <div class="col-3">
-    <div class="card p-3 m-auto" id="tarjetas">
+    <div class="card p-3 rounded-4 m-auto" id="tarjetas">
           <img src="imagenes/crimepays.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <p class="card-text">"Crime Pays" <br> 1972</p>
           </div>
       </div>
     </div>
+
     <div class="col-3">
-    <div class="card p-3 m-auto" id="tarjetas">
+    <div class="card p-3 rounded-4 m-auto" id="tarjetas">
           <img src="imagenes/cosanuestra.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <p class="card-text">"Cosa Nuestra" <br> 1969</p>
@@ -95,11 +123,25 @@
       </div>
     </div>
   </div>
-
 </div>
-    
 
+<div class="container-fluid mt-5 mx-auto px-0 rounded-4" id="cajascolor">
+  <div class="row m-0">
+    <div class="col-12 text-center" id="letratitulo">Historia del Dúo</div>
+  </div>
 
+  <div class="row p-5">
+    <div class="col-6 ">
+      <img src="imagenes/hectorywillie1.jpg" width=750 class="img-fluid m-auto rounded-4" alt="">
+    </div>
+    <div class="col-6 m-auto px-5" id="letracajas">
+      A mediados de los años 60, Willie Colón ya tenía su propia orquesta y estaba grabando su primer LP, El Malo, para el sello Alegre Records. Sin embargo, la disquera quebró y las grabaciones quedaron en el aire, hasta que el ingeniero de sonido Irv Greenbaum las rescató y las llevó al recién fundado sello Fania Records, dirigido por Johnny Pacheco y Jerry Masucci.
+<br>
+Por su parte, Héctor Lavoe era el vocalista de la orquesta The New Yorkers, dirigida por el pianista Russell Cohen, y ya había grabado su primer sencillo en 1965. Durante una de esas presentaciones, Pacheco escuchó la potencia y el estilo único de su voz y tomó nota de su nombre para futuros proyectos.
+    </div>
+  </div>
+  
+</div>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    
 </body>
 </html>
