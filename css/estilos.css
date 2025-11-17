@@ -81,3 +81,44 @@ body {
   background-color: #171717;
   color: white;
   border: none;
+}
+
+  /*galeria*/
+ /* Masonry tipo Pinterest */
+.masonry-gallery {
+    column-count: 3;
+    column-gap: 20px;
+}
+
+.masonry-gallery a {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Las imágenes mantienen proporción */
+.gallery-item {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    break-inside: avoid;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover */
+.gallery-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(255,255,255,0.15);
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+    .masonry-gallery { column-count: 2; }
+}
+
+@media (max-width: 576px) {
+    .masonry-gallery { column-count: 1; }
+}
+ 
