@@ -2,61 +2,82 @@ body {
     background-color: #000000;
 }
 
-#letranombre {
-    color: blanchedalmond;
-    font-family: "Holtwood One SC", serif;
-    font-size: 100px;
-    font-weight: 200;
-    font-style: normal;
-}
-
-#letratitulo {
-    color: rgb(255, 255, 255);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
-    font-weight: 100;
-    font-style: normal;
-}
-
-#letratarjetas {
-    font-size: 25px;
-    color: #ffffff;
-}
-
+/*Tarjetas pequeña y mediana */
 #tarjetas {
     background-color: #171717;
-    width: 20rem;
     color:#ffffff
 }
 
 #tarjetasdiscografia {
     background-color: #171717;
+    font-size: 15px;
     
 }
 
+/* Tamaño de contenedores */
 #cajas {
-    width: calc(100% - 6rem); 
+    width: calc(100% - 6rem);
+    margin: 0 auto;
 }
 
 #cajascolor {
  width: calc(100% - 6rem); 
  background-color: #171717;
  margin: 0 auto;
+ color: #ffffff;
 }
 
+/* tamaño tipografía */
 #letracajas {
     color: rgb(255, 255, 255);
-    font-size: 30px;
+    font-size: 25px;
     
 }
 
+
+#letratitulo {
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    font-style: normal;
+}
+
+#letratarjetas {
+    font-size: 13px;
+    color: #ffffff;
+}
+
+
+#letranombre {
+    color: blanchedalmond;
+    font-family: "Holtwood One SC", serif;
+    font-size: 80px;
+    font-weight: 180;
+    font-style: normal;
+}
+
+/* Versión mobile: desde 768px hacia abajo */
+@media (max-width: 992px) {
+    #letracajas {
+        font-size: 16px;
+    }
+    #letranombre {
+        color: blanchedalmond;
+        font-family: "Holtwood One SC", serif;
+        font-size: 50px;
+        font-weight: 100;
+        font-style: normal;
+    }
+}
+
 .card-dark {
-  background-color: #1a1a1a;
+  background-color: #171717;
   color: white;
   border: none;
 }
 
 .card-dark .list-group-item {
-  background-color: #1a1a1a;
+  background-color: #171717;
   color: white;
   border: none;
